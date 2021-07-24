@@ -32,26 +32,26 @@ class AddAnimal extends Component {
     onSubmitContact = (e) => {
         e.preventDefault();
 
-  fetch("http://localhost:8080/api/animals/add", {
-  method: "POST",
-  body: JSON.stringify({
-    name: this.state.name,
-    image: this.state.image
-  })
-})
-  .then(res => {
-    if (!response.ok) throw Error(response.statusText);
-    return response.json();
-  })
-  .then(data => console.log(data))
-  .catch(error => console.log(error));
-        //here add to db
+//   fetch("http://localhost:8080/api/animals/add", {
+//   method: "POST",
+//   body: JSON.stringify({
+//     name: this.state.name,
+//     image: this.state.image
+//   })
+// })
+//   .then(res => {
+//     if (!response.ok) throw Error(response.statusText);
+//     return response.json();
+//   })
+//   .then(data => console.log(data))
+//   .catch(error => console.log(error));
+//         //here add to db
 
-        //this.props.onAdd(this.state);
-        //this.setState({
-          //name: "",
-          //age:"",
-        //});
+//         //this.props.onAdd(this.state);
+//         //this.setState({
+//           //name: "",
+//           //age:"",
+//         //});
       };
 
     render(){

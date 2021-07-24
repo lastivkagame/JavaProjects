@@ -60,7 +60,7 @@ public class AnimalController {
         }
     }
 
-    @PostMapping("/animals")
+    @PostMapping("/animals/add")
     public ResponseEntity<Animal> createAnimal(@RequestBody Animal animal) {
         try {
             Animal _animal = animalRepository
